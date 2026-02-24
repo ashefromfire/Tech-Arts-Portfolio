@@ -3,7 +3,7 @@
     src: url(fonts/DTM-Mono.otf);
 }
 
-body {
+p {
     font-family: pixelFont, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
