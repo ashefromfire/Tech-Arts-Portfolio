@@ -10,17 +10,30 @@
     
 <body>
     <div class="title">
-        <h1>Ashley Simmons</h1>
-        <h2><a href="https://youtu.be/g4buGPfbyTU">Click here if video isn't working</a></h2>
+        <h1 id="typing"></h1>
+        <h2>Animation portfolio</h2>
     </div>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/g4buGPfbyTU" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-mewtyvf3dQ1Fs?si=nrhwhHNgMkbqUuORdia; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
 
-    <div class="demoReel">
-        <video width="500" controls>
-            <source src="https://youtu.be/g4buGPfbyTU">
-        Your browser does not support videos, go to https://youtu.be/g4buGPfbyTU.
-        </video>
-    </div>
+    <script>
+    const text = "Ashley Simmons";
+    const speed = 100; // typing speed in milliseconds
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+  </script>
 
     <!--
     <div class="left frame">
